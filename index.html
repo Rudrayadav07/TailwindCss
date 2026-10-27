@@ -1,24 +1,251 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <meta
+    name="description"
+    content="Explore my work, services, and background. Get in touch to discuss your next project."
+  />
+  <meta name="theme-color" content="#ffffff" />
+
+  <title>Hello — Portfolio</title>
+
+  <!-- Development only: use a compiled Tailwind CSS build in production -->
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
-<body>
-    <div class="main w-full h-screen bg-white font-mono" >
-        <div class="container mx-auto">
-            <div class="navbar w-full bg-white-600 flex justify-between items-center px-17 py-7">
-                <h3 class= " font-semibold font-mono">Hello</h3>
-                <div class = " hidden lg:flex flex gap-10">
-                    <a class= "text-sm opacity-75" href="#">About</a>
-                    <a class= "text-sm opacity-75" href="#">Work</a>
-                    <a class= "text-sm opacity-75" href="#">Service</a>
-                    <a class= "text-sm opacity-75" href="#">Contact</a>
-                </div>
-            </div>
-        </div>
+
+<body class="min-h-screen bg-white font-mono text-neutral-900 antialiased">
+
+  <a
+    href="#main-content"
+    class="sr-only z-50 rounded-md bg-black px-4 py-2 text-white focus:not-sr-only focus:fixed focus:left-4 focus:top-4"
+  >
+    Skip to content
+  </a>
+
+  <header class="sticky top-0 z-40 border-b border-neutral-200/70 bg-white/90 backdrop-blur-md">
+    <div class="mx-auto flex min-h-20 max-w-7xl items-center justify-between px-5 sm:px-8 lg:px-12">
+
+      <!-- Brand -->
+      <a
+        href="/"
+        class="rounded-sm text-lg font-bold tracking-tight transition-opacity hover:opacity-70 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-neutral-900"
+        aria-label="Hello home"
+      >
+        Hello<span class="text-neutral-400">.</span>
+      </a>
+
+      <!-- Desktop navigation -->
+      <nav aria-label="Main navigation" class="hidden md:block">
+        <ul class="flex items-center gap-8 lg:gap-10">
+          <li>
+            <a
+              href="#about"
+              class="text-sm text-neutral-600 transition-colors hover:text-black focus-visible:rounded-sm focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-neutral-900"
+            >
+              About
+            </a>
+          </li>
+          <li>
+            <a
+              href="#work"
+              class="text-sm text-neutral-600 transition-colors hover:text-black focus-visible:rounded-sm focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-neutral-900"
+            >
+              Work
+            </a>
+          </li>
+          <li>
+            <a
+              href="#services"
+              class="text-sm text-neutral-600 transition-colors hover:text-black focus-visible:rounded-sm focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-neutral-900"
+            >
+              Services
+            </a>
+          </li>
+          <li>
+            <a
+              href="#contact"
+              class="rounded-full border border-neutral-300 px-5 py-2.5 text-sm transition-colors hover:border-neutral-900 hover:bg-neutral-900 hover:text-white focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-neutral-900"
+            >
+              Contact <span aria-hidden="true">↗</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- Mobile menu button -->
+      <button
+        id="menu-toggle"
+        type="button"
+        class="inline-flex size-11 items-center justify-center rounded-lg border border-neutral-200 transition-colors hover:bg-neutral-100 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-neutral-900 md:hidden"
+        aria-label="Open navigation menu"
+        aria-expanded="false"
+        aria-controls="mobile-menu"
+      >
+        <svg
+          id="menu-icon"
+          xmlns="http://www.w3.org/2000/svg"
+          width="22"
+          height="22"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="1.8"
+          stroke-linecap="round"
+          aria-hidden="true"
+        >
+          <path d="M4 7h16M4 12h16M4 17h16" />
+        </svg>
+      </button>
     </div>
+
+    <!-- Mobile navigation -->
+    <nav
+      id="mobile-menu"
+      aria-label="Mobile navigation"
+      hidden
+      class="border-t border-neutral-200 bg-white px-5 py-4 md:hidden"
+    >
+      <ul class="mx-auto flex max-w-7xl flex-col gap-1">
+        <li>
+          <a href="#about" class="block rounded-lg px-3 py-3 text-sm text-neutral-700 hover:bg-neutral-100">
+            About
+          </a>
+        </li>
+        <li>
+          <a href="#work" class="block rounded-lg px-3 py-3 text-sm text-neutral-700 hover:bg-neutral-100">
+            Work
+          </a>
+        </li>
+        <li>
+          <a href="#services" class="block rounded-lg px-3 py-3 text-sm text-neutral-700 hover:bg-neutral-100">
+            Services
+          </a>
+        </li>
+        <li>
+          <a href="#contact" class="block rounded-lg px-3 py-3 text-sm text-neutral-700 hover:bg-neutral-100">
+            Contact ↗
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <!-- Placeholder sections: replace with your actual content -->
+    <section id="about" class="mx-auto max-w-7xl scroll-mt-24 px-5 py-24 sm:px-8 lg:px-12">
+      <p class="mb-4 text-xs uppercase tracking-[0.2em] text-neutral-500">
+        Introduction
+      </p>
+      <h1 class="max-w-3xl text-4xl font-semibold leading-tight tracking-tight sm:text-6xl">
+        Building things that matter.
+      </h1>
+      <p class="mt-6 max-w-xl text-sm leading-7 text-neutral-600 sm:text-base">
+        A little about me, what I do, and the ideas I am working on.
+      </p>
+    </section>
+
+    <section id="work" class="scroll-mt-24 border-t border-neutral-200 px-5 py-16 sm:px-8 lg:px-12">
+      <div class="mx-auto max-w-7xl">
+        <h2 class="text-2xl font-semibold tracking-tight">Selected work</h2>
+        <p class="mt-3 text-sm leading-6 text-neutral-600">
+          A selection of projects, experiments, and things I have built.
+        </p>
+      </div>
+    </section>
+
+    <section id="services" class="scroll-mt-24 border-t border-neutral-200 px-5 py-16 sm:px-8 lg:px-12">
+      <div class="mx-auto max-w-7xl">
+        <h2 class="text-2xl font-semibold tracking-tight">Services</h2>
+        <p class="mt-3 text-sm leading-6 text-neutral-600">
+          Thoughtful development and practical digital solutions.
+        </p>
+      </div>
+    </section>
+
+    <section id="contact" class="scroll-mt-24 border-t border-neutral-200 px-5 py-16 sm:px-8 lg:px-12">
+      <div class="mx-auto max-w-7xl">
+        <h2 class="text-2xl font-semibold tracking-tight">Let's connect.</h2>
+        <p class="mt-3 text-sm leading-6 text-neutral-600">
+          Have a project in mind? Let's talk about it.
+        </p>
+        <a
+          href="mailto:hello@example.com"
+          class="mt-6 inline-flex rounded-full bg-neutral-900 px-6 py-3 text-sm text-white transition-colors hover:bg-neutral-700 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-neutral-900"
+        >
+          Get in touch ↗
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="border-t border-neutral-200 px-5 py-6 sm:px-8 lg:px-12">
+    <div class="mx-auto flex max-w-7xl flex-col gap-2 text-xs text-neutral-500 sm:flex-row sm:items-center sm:justify-between">
+      <p>&copy; <span id="current-year"></span> Hello. All rights reserved.</p>
+      <a href="#main-content" class="transition-colors hover:text-black">
+        Back to top ↑
+      </a>
+    </div>
+  </footer>
+
+  <script>
+    (() => {
+      "use strict";
+
+      const menuToggle = document.getElementById("menu-toggle");
+      const mobileMenu = document.getElementById("mobile-menu");
+      const menuIcon = document.getElementById("menu-icon");
+      const yearElement = document.getElementById("current-year");
+
+      if (!menuToggle || !mobileMenu || !menuIcon || !yearElement) {
+        return;
+      }
+
+      const openIcon = '<path d="M4 7h16M4 12h16M4 17h16" />';
+      const closeIcon = '<path d="m18 6-12 12M6 6l12 12" />';
+
+      function setMenuOpen(isOpen) {
+        mobileMenu.hidden = !isOpen;
+        menuToggle.setAttribute("aria-expanded", String(isOpen));
+        menuToggle.setAttribute(
+          "aria-label",
+          isOpen ? "Close navigation menu" : "Open navigation menu"
+        );
+        menuIcon.innerHTML = isOpen ? closeIcon : openIcon;
+      }
+
+      menuToggle.addEventListener("click", () => {
+        const isOpen = menuToggle.getAttribute("aria-expanded") === "true";
+        setMenuOpen(!isOpen);
+      });
+
+      mobileMenu.addEventListener("click", (event) => {
+        if (event.target.closest("a")) {
+          setMenuOpen(false);
+        }
+      });
+
+      document.addEventListener("keydown", (event) => {
+        if (
+          event.key === "Escape" &&
+          menuToggle.getAttribute("aria-expanded") === "true"
+        ) {
+          setMenuOpen(false);
+          menuToggle.focus();
+        }
+      });
+
+      window.addEventListener("resize", () => {
+        if (window.matchMedia("(min-width: 768px)").matches) {
+          setMenuOpen(false);
+        }
+      });
+
+      yearElement.textContent = new Date().getFullYear();
+    })();
+  </script>
 </body>
 </html>
